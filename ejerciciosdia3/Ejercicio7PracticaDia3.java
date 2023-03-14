@@ -20,23 +20,26 @@ public class Ejercicio7PracticaDia3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String cadena = " ";
+        String cadena;
         int contPos = 0;
         int contNeg= 0;
+        int longitud;
         do {
             System.out.println("Ingrese una cadena.");
             Scanner leer = new Scanner(System.in);
             cadena = leer.next();
-            int longitud=cadena.length();
-            if (cadena.substring(0,1).equalsIgnoreCase("X")) {
+            longitud=cadena.length();
+            if (longitud == 5) {
+                 if (cadena.substring(0,1).equalsIgnoreCase("X")) {
                 if (cadena.substring(4).equalsIgnoreCase("O")) {
                     contPos = contPos + 1;
                     }
                 }
+            }
             else{
                 contNeg = contNeg + 1;
             }
-        } while (cadena.equals("&&&&&"));
+        } while (!"&&&&&".equals(cadena));
         System.out.println("La cantidad de entradas positivas es:" + contPos);
         System.out.println("La cantidad de entradas negativas es:" + contNeg);
         
