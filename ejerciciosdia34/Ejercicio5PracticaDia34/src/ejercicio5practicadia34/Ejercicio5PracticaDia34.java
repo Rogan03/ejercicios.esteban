@@ -3,24 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicio2extrasdia25;
+package ejercicio5practicadia34;
 
-import servicios.AhorcadoService;
+import servicios.paisService;
 
 /**
  *
  * @author Esteban
  */
-public class Ejercicio2EXTRASDia25 {
+public class Ejercicio5PracticaDia34 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        AhorcadoService as = new AhorcadoService();
-        as.Juego(); //2 ERRORES EN SERVICE
-        //ERRORES DETECTADOS:
-        //
+        paisService ps = new paisService();
+        ps.ingresarPais();
+        ps.ordenarPais();
+        ps.retirarPais();
     }
-    
 }

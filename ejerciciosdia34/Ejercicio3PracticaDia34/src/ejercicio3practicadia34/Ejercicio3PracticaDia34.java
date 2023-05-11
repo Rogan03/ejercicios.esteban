@@ -3,24 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicio2extrasdia25;
+package ejercicio3practicadia34;
 
-import servicios.AhorcadoService;
+import entidades.Alumno;
+import java.util.Scanner;
+import servicios.alumnoService;
 
 /**
  *
  * @author Esteban
  */
-public class Ejercicio2EXTRASDia25 {
+public class Ejercicio3PracticaDia34 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        AhorcadoService as = new AhorcadoService();
-        as.Juego(); //2 ERRORES EN SERVICE
-        //ERRORES DETECTADOS:
-        //
+        alumnoService as = new alumnoService();
+        Alumno a = new Alumno();
+        as.elOrigenDeLosTiempos(a);
     }
     
 }
