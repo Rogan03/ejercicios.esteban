@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio1PracticaDia43">
+  <ClassDiagramComponents>
+    <Class name="Ejercicio1PracticaDia43" package="ejercicio1practicadia43" visibility="public" xPosition="8.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Perro" package="entidades" visibility="public" xPosition="8.0" yPosition="187.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="String" name="tamanio"/>
+          <Argument type="Integer" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getRaza" returnType="String" visibility="public"/>
+        <Method name="setRaza" returnType="void" visibility="public">
+          <Argument type="String" name="raza"/>
+        </Method>
+        <Method name="getTamanio" returnType="String" visibility="public"/>
+        <Method name="setTamanio" returnType="void" visibility="public">
+          <Argument type="String" name="tamanio"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="entidades" visibility="public" xPosition="415.0" yPosition="130.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="perruqui" type="Perro" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="Integer" name="edad"/>
+          <Argument type="Integer" name="documento"/>
+          <Argument type="Perro" name="perruqui"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="getDocumento" returnType="Integer" visibility="public"/>
+        <Method name="setDocumento" returnType="void" visibility="public">
+          <Argument type="Integer" name="documento"/>
+        </Method>
+        <Method name="getPerruqui" returnType="Perro" visibility="public"/>
+        <Method name="setPerruqui" returnType="void" visibility="public">
+          <Argument type="Perro" name="perruqui"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="perruqui" source="entidades.Persona" target="entidades.Perro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Persona" target="entidades.Perro" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
